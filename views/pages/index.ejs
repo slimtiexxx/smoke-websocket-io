@@ -14,9 +14,151 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <video id="bgvid" playsinline autoplay muted loop>
+    <source src="videos/smoke.mp4" type="video/mp4">
+  </video>
 
-  <h1>ASDASD</h1>
+  <div id="loader" class="loader">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="-53 145.7 503.3 503.3" style="enable-background:new -53 145.7 503.3 503.3;" xml:space="preserve">
+        <g>
+          <path class="st0" d="M433,649H-35.6c-9.6,0-17.4-7.8-17.4-17.4V163c0-9.6,7.8-17.4,17.4-17.4H433c9.6,0,17.4,7.8,17.4,17.4v468.6
+                C450.3,641.2,442.6,649,433,649"/>
+          <g>
+            <polygon class="st1" points="380.9,449.4 415.6,449.4 415.6,414.7 380.9,414.7 		"/>
+            <polygon class="st1" points="137.9,215.1 259.4,215.1 259.4,180.4 137.9,180.4 		"/>
+          </g>
+          <polygon class="st2" points="380.9,484.1 415.6,484.1 415.6,449.4 380.9,449.4 	"/>
+          <linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="341.1679" y1="449.407" x2="310.985" y2="449.407">
+            <stop  offset="0" style="stop-color:#000000"/>
+            <stop  offset="1" style="stop-color:#000000"/>
+          </linearGradient>
+          <path id="XMLID_4_" class="st3" d="M346.2,649H198.7V249.8h130.2c9.6,0,17.4,7.8,17.4,17.4V649z"/>
+          <linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="341.1679" y1="449.407" x2="310.985" y2="449.407">
+            <stop  offset="0" style="stop-color:#000000"/>
+            <stop  offset="1" style="stop-color:#000000"/>
+          </linearGradient>
+          <path id="XMLID_3_" class="st4" d="M198.7,649H51.1V267.2c0-9.6,7.8-17.4,17.4-17.4h130.2V649L198.7,649z"/>
+          <path id="XMLID_1_" class="st5 right-door" d="M346.2,649H198.7V249.8h130.2c9.6,0,17.4,7.8,17.4,17.4V649z"/>
+          <path id="XMLID_2_" class="st6 left-door" d="M198.7,649H51.1V267.2c0-9.6,7.8-17.4,17.4-17.4h130.2L198.7,649L198.7,649z"/>
+        </g>
+    </svg>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div id="userFormArea" class="login container-fluid untriggered">
+    <div class="row">
+
+      <h1 class="login-header col-8 mx-auto ">Ki vagy?</h1>
+
+      <form id="userForm" class="login-form col-6 mx-auto">
+        <input class="text-input form-control" type="text"  autocomplete="off" id="username">
+        <button class="submit btn btn-primary button-custom" type="submit">
+          <span class="icomoon-right-arrow"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="welcome-text" class="untriggered">
+    <h1>Helloszia, </h1>
+  </div>
+
+  <div id="avatar-page" class="untriggered">
+    <div class="col-8 mx-auto" id="avatar">
+      <img src="img/base/cover.jpg" alt="Avatar Image">
+      <span class="icomoon-spinner11 submit"></span>
+      <button class="btn btn-primary">Go</button>
+    </div>
+  </div>
+
+
+  <div class="main-page container-fluid untriggered" id="mainPage">
+
+    <header class="row header">
+      <div class="col-6 wind">
+        <span class="icomoon-wind"></span>
+      </div>
+      <div class="col-6 refresh">
+        <span class="icomoon-spinner11"></span>
+      </div>
+    </header>
+
+    <div class="row c-cont-row">
+      <h1 class="text col-12 text-center">CIGARETTA?</h1>
+      <div class="col-6 align-self-baseline">
+        <div id="users"></div>
+        <button class="btn btn-primary" id="clear">Új név megadása</button>
+      </div>
+      <div class="col-6">
+
+        <div id="chat" class="chat-area"></div>
+
+        <form action="" id="messageForm">
+          <div class="row no-gutters">
+            <div class="col-10">
+              <input id="message" type="text" class="text-input" autocomplete="off">
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary" type="submit" id="messageFormButton"><span class="icomoon-right-arrow"></span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn btn-primary col-4 mx-auto" id="submit">Megyek</button>
+    </div>
+    <div class="main-page-weather row">
+      <div class="col-6 mx-auto">
+        <div id='openweathermap-widget'></div>
+        <div id="windyty" class="wind-map"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="lift-wrapper container-fluid untriggered" id="lift-page">
+    <div class="row">
+      <div class="lift col-12">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="-53 145.7 503.3 503.3" style="enable-background:new -53 145.7 503.3 503.3;" xml:space="preserve">
+                <g>
+                  <path class="st0" d="M433,649H-35.6c-9.6,0-17.4-7.8-17.4-17.4V163c0-9.6,7.8-17.4,17.4-17.4H433c9.6,0,17.4,7.8,17.4,17.4v468.6
+                        C450.3,641.2,442.6,649,433,649"/>
+                  <g>
+                    <polygon class="st1" points="380.9,449.4 415.6,449.4 415.6,414.7 380.9,414.7 		"/>
+                    <polygon class="st1" points="137.9,215.1 259.4,215.1 259.4,180.4 137.9,180.4 		"/>
+                  </g>
+                  <polygon class="st2" points="380.9,484.1 415.6,484.1 415.6,449.4 380.9,449.4 	"/>
+                  <linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="341.1679" y1="449.407" x2="310.985" y2="449.407">
+                    <stop  offset="0" style="stop-color:#000000"/>
+                    <stop  offset="1" style="stop-color:#000000"/>
+                  </linearGradient>
+                  <path id="XMLID_4_" class="st3" d="M346.2,649H198.7V249.8h130.2c9.6,0,17.4,7.8,17.4,17.4V649z"/>
+                  <linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="341.1679" y1="449.407" x2="310.985" y2="449.407">
+                    <stop  offset="0" style="stop-color:#000000"/>
+                    <stop  offset="1" style="stop-color:#000000"/>
+                  </linearGradient>
+                  <path id="XMLID_3_" class="st4" d="M198.7,649H51.1V267.2c0-9.6,7.8-17.4,17.4-17.4h130.2V649L198.7,649z"/>
+                  <path id="XMLID_1_" class="st5 right-door" d="M346.2,649H198.7V249.8h130.2c9.6,0,17.4,7.8,17.4,17.4V649z"/>
+                  <path id="XMLID_2_" class="st6 left-door" d="M198.7,649H51.1V267.2c0-9.6,7.8-17.4,17.4-17.4h130.2L198.7,649L198.7,649z"/>
+                </g>
+            </svg>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Scripts -->

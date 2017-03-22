@@ -1,0 +1,120 @@
+/*** Project mixins ***/
+
+/* mixins START */
+
+$section-header-height-DESKTOP: 120px;
+$section-header-height-TABLET: 80px;
+$section-header-height-MOBILE: 60px;
+
+
+
+// cutted corner HEADER
+@mixin cutted-corner-right-top($background-color) {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: $section-header-height-DESKTOP;
+	background-color: $background-color;
+	@include css3-transform(translateY(-50%));
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 35px 0 8.33333%;
+
+	h2{
+		color: $color-white;
+		margin: 0;
+		padding-left: 15px;
+		font-size: $project-h1-font-size;
+		line-height: $project-h1-line-height;
+	}
+
+	&:before{
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: $section-header-height-DESKTOP 0 0 $section-header-height-DESKTOP;
+		border-color: transparent transparent transparent $background-color;
+		position: absolute;
+		top: 0;
+		right: - $section-header-height-DESKTOP + 1;
+	}
+
+	// tablet
+	@include media-breakpoint-between(md, lg) {
+		height: $section-header-height-TABLET;
+
+		&:before{
+			border-width: $section-header-height-TABLET 0 0 $section-header-height-TABLET;
+			right: - $section-header-height-TABLET + 1;
+		}
+	}
+
+	// tablet vertical + mobile
+	@include media-breakpoint-down(md) {
+		padding: 0 15px;
+
+		h2{
+			padding-left: 0;
+		}
+	}
+
+	//mobile
+	@include media-breakpoint-down(sm) {
+		height: $section-header-height-MOBILE;
+		padding-right: 0;
+
+		&:before{
+			border-width: $section-header-height-MOBILE 0 0 $section-header-height-MOBILE;
+			right: - $section-header-height-MOBILE;
+		}
+
+		h2{
+			font-size: $project-h1-font-size - 15;
+		}
+	}
+}
+
+
+
+// list center
+@mixin list-center() {
+
+	ul, ol {
+		padding-left: 0;
+
+		li:before {
+			display: inline;
+			margin-left: 0;
+		}
+	}
+}
+
+// list right
+@mixin list-right() {
+
+	ul, ol {
+		padding-left: 0;
+
+		li:before {
+			display: inline;
+			margin-left: 0;
+		}
+	}
+}
+
+// aspect ratio calculation
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+}
+
+/* mixins END */
+

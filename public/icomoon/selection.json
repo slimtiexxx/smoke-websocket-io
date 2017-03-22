@@ -1,0 +1,136 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M682.532 284.455c0-83.483-68.21-151.696-151.696-151.696-83.481 0-151.694 68.214-151.694 151.696h75.749c0-41.642 34.107-75.749 75.749-75.749s75.751 34.107 75.751 75.749-34.109 75.749-75.751 75.749h-454.891v75.749h455.087c83.487 0.397 151.696-68.015 151.696-151.498z",
+          "M872.107 284.455c-83.487 0-151.696 68.214-151.696 151.696h75.945c0-41.642 34.109-75.749 75.751-75.749s75.747 34.107 75.747 75.749-33.909 75.947-75.747 75.947h-872.107v75.749h872.304c83.483 0 151.696-68.214 151.696-151.696s-68.412-151.696-151.893-151.696z",
+          "M758.482 663.796h-531.036v75.749h531.036c22.804 0 37.875 15.070 37.875 37.875s-15.070 37.876-37.875 37.876-37.875-15.072-37.875-37.876h-75.751c0 60.681 49.376 113.822 113.822 113.822s113.822-49.376 113.822-113.822-49.572-113.624-114.018-113.624z"
+        ],
+        "attrs": [
+          {},
+          {},
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "wind"
+        ]
+      },
+      "attrs": [
+        {},
+        {},
+        {}
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "wind",
+        "prevSize": 32,
+        "code": 59649
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M315.733 0l-119.467 119.467 392.533 392.533-392.533 392.533 119.467 119.467 512-512z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "keyboard-right-arrow-button"
+        ],
+        "grid": 0
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "right-arrow",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 1,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M1024 384h-384l143.53-143.53c-72.53-72.526-168.96-112.47-271.53-112.47s-199 39.944-271.53 112.47c-72.526 72.53-112.47 168.96-112.47 271.53s39.944 199 112.47 271.53c72.53 72.526 168.96 112.47 271.53 112.47s199-39.944 271.528-112.472c6.056-6.054 11.86-12.292 17.456-18.668l96.32 84.282c-93.846 107.166-231.664 174.858-385.304 174.858-282.77 0-512-229.23-512-512s229.23-512 512-512c141.386 0 269.368 57.326 362.016 149.984l149.984-149.984v384z"
+        ],
+        "tags": [
+          "spinner",
+          "loading",
+          "loading-wheel",
+          "refresh",
+          "repeat",
+          "busy",
+          "wait",
+          "arrow"
+        ],
+        "defaultCode": 59780,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "spinner11, loading12",
+        "name": "spinner11",
+        "order": 3,
+        "id": 133,
+        "prevSize": 32,
+        "code": 59780
+      },
+      "setIdx": 2,
+      "setId": 1,
+      "iconIdx": 132
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icomoon-",
+      "metadata": {
+        "fontFamily": "icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 100,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

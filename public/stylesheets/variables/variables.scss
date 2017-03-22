@@ -1,0 +1,74 @@
+$color-dark-blue:     #345065;
+$color-light-gray:    #CDD1D3;
+$color-light-blue:    #99ABD5;
+
+$color-orange:        #ECB45C;
+$color-dark-purple:   #556080;
+$color-dark-blue-OPACITY: rgba(85, 96, 128, 0.7);
+
+
+// INPUTS START
+
+.text-input{
+  font-family: 'Lato-Heavy';
+  font-size: 30px !important;
+  background-color: $color-dark-blue-OPACITY !important;
+  border-radius: 0 !important;
+  border: 3px solid $color-orange !important;
+  padding: 15px 35px !important;
+  color: $color-orange !important;
+  text-transform: uppercase !important;
+  text-align: center;
+  outline: none !important;
+}
+.btn-primary{
+  font-family: 'Lato-Heavy';
+  background-color: $color-dark-blue-OPACITY !important;
+  color: $color-orange !important;
+  border: 3px solid $color-orange !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  font-size: 25px !important;
+  letter-spacing: 0.09em;
+  padding: 15px 35px !important;
+  outline: none !important;
+
+  &:hover{
+    background-color: $color-dark-purple !important;
+  }
+}
+
+// INPUTS END
+
+
+
+
+// TEXTS START
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  letter-spacing: 0.09em !important;
+}
+
+h1{
+  color: $color-orange !important;
+  font-family: 'Lato-Heavy' !important;
+  text-transform: uppercase !important;
+  font-size: 25px;
+}
+.text{
+  color: $color-orange;
+}

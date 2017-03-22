@@ -1,0 +1,22 @@
+/*** Project fonts ***/
+
+// FONT FACE
+@mixin css3-font-face($new-font-name, $new-font-filename) {
+  @font-face {
+    font-family: '#{$new-font-name}';
+    src: url('../fonts/#{$new-font-filename}.eot');
+    src: url('../fonts/#{$new-font-filename}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/#{$new-font-filename}.woff') format('woff'),
+    url('../fonts/#{$new-font-filename}.ttf') format('truetype'),
+    url('../fonts/#{$new-font-filename}.svg##{$new-font-name}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+/* fonts START */
+
+@include css3-font-face(Lato-Light, Lato-Light);
+@include css3-font-face(Lato-Heavy, Lato-Heavy);
+
+/* fonts END */
